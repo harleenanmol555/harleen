@@ -1,0 +1,94 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About Me</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Hi, I'm <span style="color:blue;">Harleen Anmol</span></h1> <!-- Inline CSS -->
+    <p class="bio">I'm a student passionate about web development and design.</p>
+    <img src="images/your-photo.jpg" alt="Your photo" width="200" />
+    <button onclick="changeBackground()">Change Background Color</button>
+    <p id="greeting"></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: Georgia, serif;
+      margin: 20px;
+    }
+    .section {
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About Me</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <div class="section">
+      <h2>Education</h2>
+      <p>I'm currently studying at Khalsa school</p>
+      <h2>Hobbies</h2>
+      <p>I like painting, reading, and drawing.</p>
+    </div>
+  </main>
+</body>
+</html>
+contact.html (With Form & JS Output)
+html
+Copy
+Edit
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About Me</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Contact Me</h2>
+    <form onsubmit="displayInput(event)">
+      <label>Name: <input type="text" id="name" required /></label><br><br>
+      <label>Message: <textarea id="message" required></textarea></label><br><br>
+      <button type="submit">Send</button>
+    </form>
+    <div id="output"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
